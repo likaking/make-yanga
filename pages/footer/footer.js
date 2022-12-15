@@ -68,7 +68,7 @@ export default function Footer() {
         <div className={styles.footer_logo}>
           <div className={styles.footer_logo1}></div>
           <div className={styles.footer_logo2}>
-          <span className={styles.footer_CompName}>Coin Market Stats</span></div>
+          <span className={styles.footer_CompName}>Make Yanga</span></div>
           <div className={styles.footer_logo3}></div>
         </div>
         <div className={styles.footer_addressContacts}>
@@ -80,25 +80,22 @@ export default function Footer() {
           <ul>
             <Link href = '' scroll = {false}><li> About </li></Link>
             <Link href = '' scroll = {false}><li>Menu </li></Link>
-            <Link href = '' scroll = {false}><li>Blog </li></Link>
             <Link href = '' scroll = {false}><li>Gallery </li></Link>
-            <Link href = '' scroll = {false}><li>Faq </li></Link>
             <Link href = '' scroll = {false}><li>Contact </li></Link>
           </ul>
         </div>
         <div className={styles.footer_Social}>
         <ul className={styles.footer_ul}>
-            <li> <FaFacebook /> </li>
-            <li> <FaTwitter /> </li>
+           <li> <FaFacebook /> </li>
+           <li> <FaTwitter /> </li>
            <li> <FaTiktok /> </li>
-            <li> <FaYoutube /> </li>  
-          </ul>
+           <li> <FaYoutube /> </li>  
+           </ul>
         </div>
        <button className={styles.upButton} onClick = {scrollToTop} style={{display: visible ? 'inline' : 'none'}}><FaArrowUp /></button>
-       
        </div>
        <div className={styles.copyRight}><FaCopyright /> {dateBuilder(new Date())} Coin Market Stats</div>
-      </div>
+       </div>
       
 
      

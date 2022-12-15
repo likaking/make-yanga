@@ -24,11 +24,11 @@ return(
 </div>
 
 <div className={styles.nav_bar__compName}>
-Coin Market Stats
+Make Yanga
 </div>
 <div className={styles.nav_bar__wraper}>
 <ul className={styles.nav_bar__menu}>
-<li><a href = "#" className={styles.nav_bar__menu_a}>Explore</a></li>
+<li><a href = "#" className={styles.nav_bar__menu_a}>More tools</a></li>
 <li><a href = "#" className={styles.nav_bar__menu_a}>Creator</a></li>
 <li><a href = "#" className={styles.nav_bar__menu_a}>Market</a></li>
 <li><a href = "#" className={styles.nav_bar__menu_a}>Community</a></li>
@@ -39,12 +39,11 @@ Coin Market Stats
 <div className={styles.nav_bar__mobileBtn} onClick={toggleMenu}><FaBars /></div>
 <div className={styles.nav_Mobilemenu} style={{display : toggle ? 'block' : 'none'}}>
   <ul>
-  <li><a href = "#" className={styles.nav_bar__menu_aMobile}>Explore</a></li>
+  <li><a href = "#" className={styles.nav_bar__menu_aMobile}>More tools</a></li>
 <li><a href = "#" className={styles.nav_bar__menu_aMobile}>Creator</a></li>
 <li><a href = "#" className={styles.nav_bar__menu_aMobile}>Market</a></li>
 <li><a href = "#" className={styles.nav_bar__menu_aMobile}>Community</a></li>
   </ul>
-  <div ><FaBattleNet className={styles.nav_Mobilemenu_battleNet} /></div>
   </div>
 
  </div>
