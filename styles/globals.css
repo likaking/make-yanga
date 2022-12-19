@@ -2,11 +2,13 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family:  -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: rgba(243, 252, 252, 0.055);
+padding: 0;
+margin: 0;
+font-family:  -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+background-color:   #6388c0;
+/*background-image: linear-gradient(to top, #dc76dc, #d867d1, #d558c5, #d147b9, #cd33ac)*/;
+background-image: linear-gradient(to top, #48a3a3, #389faf, #3899ba, #4a91c0, #6388c0);
     
 }
 

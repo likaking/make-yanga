@@ -4,8 +4,7 @@
     width: 100%;
     padding-top: 5vw;
     margin-top: 40vw;
-    background-color: rgb(32, 70, 85);
-    background-image: -webkit-linear-gradient(rgb(68, 111, 128),rgba(11, 107, 102, 0.658));
+    background-color: transparent;
     position: relative;    
 }
 .footer_logo{
@@ -15,8 +14,7 @@
     width: 50%;
     margin: auto;
     gap: 2vw;
-    padding-bottom: 5em;
-    
+    padding-bottom: 5em;   
 }
 .footer_logo1{
     flex: 4.2;
@@ -143,7 +141,7 @@ padding-bottom: 0rem;
   
  }
  .footer_Social >ul>li :hover{
-color: rgb(184, 214, 228);
+color: rgb(209, 140, 254 );
 transition: 0.4s;    
 }
  .copyRight{
@@ -159,19 +157,16 @@ transition: 0.4s;
  position: fixed;
  right: 2vw;
  bottom: 2%;
- background-color: rgba(19, 41, 51, 0);
+ background-color: transparent;
  border: 0;
- color: rgb(243, 236, 236) ;
  padding: 1.2% 1.2% 1% 1.2%;
  border-radius: 50%;
- border: 2px solid rgb(14, 48, 65);
+ border: 2px solid rgb(188, 184, 191 );
  border-style: dashed;
- color: rgb(14, 48, 65);
+ color: rgb(188, 184, 191 );
  font-size: 1em;
  cursor: pointer;
  }
-
-
 
 @media screen and (max-width: 930px) {     
 .footer{

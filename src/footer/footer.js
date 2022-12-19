@@ -2,7 +2,7 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import Image from 'next/image'
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState,useRef,useLayoutEffect} from 'react';
 import styles from '/styles/Footer.module.css'
 import {FaFacebook, FaTwitter, FaTiktok, FaYoutube, FaCopyright, FaArrowUp} from 'react-icons/fa'
 
@@ -12,16 +12,17 @@ import {FaFacebook, FaTwitter, FaTiktok, FaYoutube, FaCopyright, FaArrowUp} from
 
 
 export default function Footer() {
-  
+	
+    const footerSection = useRef(null)
+	
     const dateBuilder = (d)=>{
-        let months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-        let days = ["Sunday","Monday","Tueday","Wednesday","Thursday","Friday","Saturday"]
+    let months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    let days = ["Sunday","Monday","Tueday","Wednesday","Thursday","Friday","Saturday"]
       
-      
-      let today = days[d.getDay()];
-      let c_day = d.getDate();
-      let currMounth = months[d.getMonth()];
-      let year = d.getFullYear();
+    let today = days[d.getDay()];
+    let c_day = d.getDate();
+    let currMounth = months[d.getMonth()];
+    let year = d.getFullYear();
       
       return ` ${year} `
       
@@ -44,8 +45,7 @@ export default function Footer() {
         
          
         });
-
-      };
+        };
       
 
       useEffect(()=>{
@@ -59,16 +59,21 @@ export default function Footer() {
         toggleVisible();
        // return ()=> window.removeEventListener('scroll',toggleVisible)
       },[])
+	  
+	  useLayoutEffect(()=>{
+     footerSection.current.style.display = 'block'
+     },[])
+  
    
 
   return (
     
-      <div className={styles.footer}>
+      <div className={styles.footer}  style ={{display:'none'}} ref = {footerSection} >
 
         <div className={styles.footer_logo}>
           <div className={styles.footer_logo1}></div>
           <div className={styles.footer_logo2}>
-          <span className={styles.footer_CompName}>Make Yanga</span></div>
+          <span className={styles.footer_CompName}></span></div>
           <div className={styles.footer_logo3}></div>
         </div>
         <div className={styles.footer_addressContacts}>
@@ -94,7 +99,7 @@ export default function Footer() {
         </div>
        <button className={styles.upButton} onClick = {scrollToTop} style={{display: visible ? 'inline' : 'none'}}><FaArrowUp /></button>
        </div>
-       <div className={styles.copyRight}><FaCopyright /> {dateBuilder(new Date())} Coin Market Stats</div>
+       <div className={styles.copyRight}><FaCopyright /> {dateBuilder(new Date())} Make Yanga</div>
        </div>
       
 

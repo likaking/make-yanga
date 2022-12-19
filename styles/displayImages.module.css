@@ -1,0 +1,580 @@
+.displayImages{
+width:100%;
+height:55vw;	
+}
+.imagesContianer{
+display:flex;
+flex-direction:column;
+margin:auto;
+width:75%;
+height:54.7vw;
+background-image:url('');
+background-repeat:no-repeat;
+background-size:contain;
+position:relative;
+background-color:transparent;
+}
+
+.imagesContianer_Images{
+
+}
+.snapDownload{
+display:flex;
+align-items: center;
+justify-content:center
+}
+.snapDownloadResponsive{
+display:flex;
+align-items: center;
+justify-content:center	
+}
+.snapDownload_btn,.snapDownloadResponsive_btn{
+height:3rem;
+width:19%;
+border:0;
+color:rgb(248, 213, 250);
+font-size:2vw;
+border-radius:2rem;
+background-image: linear-gradient(to right, #61a7b5, #5ca5c6, #69a1d4, #879adb, #ab8fd6);
+box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.1);
+border-style:dashed;
+transition:0.5s
+}
+.snapDownload_btn:hover{
+color:rgb(248, 213, 250);
+background-image: linear-gradient(to left, #61a7b5, #5ca5c6, #69a1d4, #879adb, #ab8fd6);
+box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.2);
+transition:0.5s
+}
+.imagesContianer_image1_parent1{
+position:absolute;
+top:15%;
+left:10.5%;
+height:51.5%;
+width:16.7%;
+border-radius:1.3rem;
+overflow:hidden;
+background-color: transparent;
+z-index:3;
+box-shadow: 20px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.imagesContianer_image1{
+height:100%;
+width:100%;
+overflow:hidden;
+border-radius:1.3rem;
+background-image:url('/psP.jpg');
+background-size:cover;
+background-repeat:no-repeat;
+}
+/*
+.imagesContianer_image1:hover{
+-webkit-transform-origin: 50%  51%;
+transform: translateZ(0);
+transform: rotateY(-7deg);
+will-change: transform;
+transition: transform 0.6s;
+-webkit-perspective: 1000;
+filter:blur(0);
+ webkit-font-smoothing: antialiased;
+}
+*/
+
+.imagesContianer_image1:hover .change_image_arragngements {
+transition: transform 0.5s;
+display:block
+}
+.imagesContianer_image2_parent2{
+position:absolute;
+top:37%;
+left:22%;
+height:51%;
+width:17%;
+border-radius:1.3rem;
+background-color: transparent;
+box-shadow: 20px 10px 15px -3px rgba(0,0,0,0.1);
+z-index:2;
+overflow:hidden;
+}
+.imagesContianer_image2{
+height:100%;
+width:100%;
+overflow:hidden;
+border-radius:1.3rem;
+background-image:url('/andriod.jfif');
+background-size:cover;
+background-repeat:no-repeat;
+overflow:hidden;
+}
+
+.imagesContianer_image2:hover .change_image_arragngements {
+transition: transform 0.5s;
+display:block
+}
+.imagesContianer_image3_parent3{
+position:absolute;
+top:16%;
+left:36.5%;
+height:51%;
+width:17%;
+border-radius:1.3rem;
+background-color: transparent;
+z-index:1;
+box-shadow: 20px 10px 15px -3px rgba(0,0,0,0.1);
+overflow:hidden;
+}
+.imagesContianer_image3{
+height:100%;
+width:100%;
+overflow:hidden;
+border-radius:1.3rem;
+background-image:url('/images.jfif');
+background-size:cover;
+background-repeat:no-repeat;
+overflow:hidden;
+}
+
+.imagesContianer_image3:hover .change_image_arragngements {
+transition: transform 0.5s;
+display:block
+}
+.imagesContianer_image4_parent4{
+position:absolute;
+top:24.89%;
+left:49%;
+height:56%;
+width:18.8%;
+border-radius:1.3rem;
+background-color: transparent;
+z-index:3;
+box-shadow: 20px 10px 15px -3px rgba(0,0,0,0.1);
+overflow:hidden;
+}
+.imagesContianer_image4{
+height:100%;
+width:100%;
+overflow:hidden;
+border-radius:1.3rem;
+background-image:url('/psP.jpg');
+background-size:cover;
+background-repeat:no-repeat;
+overflow:hidden;
+}
+
+.imagesContianer_image4:hover .change_image_arragngements {
+transition: transform 0.5s;
+display:block
+}
+.imagesContianer_image5_parent5{
+position:absolute;
+top:36%;
+left:63.2%;
+height:53.7%;
+width:18.4%;
+border-radius:1.3rem;
+background-color: transparent;
+z-index:2;
+box-shadow: 20px 10px 15px -3px rgba(0,0,0,0.1);
+overflow:hidden;
+}
+.imagesContianer_image5{
+height:100%;
+width:100%;
+overflow:hidden;
+border-radius:1.3rem;
+background-image:url('/psP.jpg');
+background-size:cover;
+background-repeat:no-repeat;
+overflow:hidden;
+}
+
+.imagesContianer_image5:hover .change_image_arragngements {
+transition: transform 0.5s;
+display:block
+}
+.imagesContianer_image6_parent6{
+position:absolute;
+top:10.6%;
+left:71.7%;
+height:52.5%;
+width:18.4%;
+border-radius:1.3rem;
+background-color: transparent;
+z-index:1;
+box-shadow: 20px 10px 15px -3px rgba(0,0,0,0.1);
+overflow:hidden;
+}
+.imagesContianer_image6{
+height:100%;
+width:100%;
+overflow:hidden;
+border-radius:1.3rem;
+background-image:url('/andriod.jfif');
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+.imagesContianer_image6:hover .change_image_arragngements {
+transition: transform 0.5s;
+display:block
+}
+.change_image_arragngements{
+position:absolute;
+width:100%;
+height:50%;
+color: rgb(251, 245, 251);
+text-align:center;
+border-radius: 0 0 1.3rem 1.3rem;
+font-weight:bold;
+font-size:1.5vw;
+background-color:rgb(202, 106, 211);
+box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.1);
+transition: transform 0.5s;
+display:none;
+}
+.change_image_arragngements_number{
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:1.7vw;
+width:fit-content;
+padding:11%;
+height:30%;
+margin:auto;
+border:3px solid rgb(251, 245, 251);
+border-style:dashed;
+border-radius:2rem;
+cursor:pointer;
+transition: transform 0.5s;
+}
+.change_image_arragngements_reset{
+margin-top:1vw;
+font-size:1vw;
+}
+.tools{
+display:flex;
+align-items:center;
+justify-content:center;
+margin-top:3vw
+}
+ .tools_input::-webkit-file-upload-button  {
+top: 150px;
+font-family: calibri;
+width: 150px;
+padding: 10px;
+border: 1px dashed rgb(249, 181, 252);;
+text-align: center;
+color:rgb(249, 181, 252);
+background-color: #dc76dc;
+border-radius:2rem;
+background-image: linear-gradient(to top, #48a3a3, #389faf, #3899ba, #4a91c0, #6388c0);
+box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.1);
+cursor: pointer;
+}
+.shuffBtn{
+top: 150px;
+font-family: calibri;
+width: 150px;
+padding: 10px;
+border: 1px dashed rgb(249, 181, 252);;
+text-align: center;
+color:rgb(249, 181, 252);
+background-color: #dc76dc;
+border-radius:2rem;
+background-image: linear-gradient(to top, #48a3a3, #389faf, #3899ba, #4a91c0, #6388c0);
+box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.1);
+cursor: pointer;
+}
+
+.tools_input::-webkit-file-upload-button:hover{
+color:rgb(248, 213, 250);
+background-image: linear-gradient(to left, #69a9b7, #63a7c7, #6da2d4, #899adb, #ab8fd6);
+box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.2);
+transition:0.5s
+}
+.shuffBtn:hover{
+color:rgb(248, 213, 250);
+background-image: linear-gradient(to left, #69a9b7, #63a7c7, #6da2d4, #899adb, #ab8fd6);
+box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.2);
+transition:0.5s
+}
+
+
+@media screen and (max-width: 930px) {    
+.imagesContianer{
+width:93.7%;
+height:69vw;
+}
+}
+
+@media screen and (max-width: 550px) {  
+.imagesContianer_Images{
+
+}
+.snapDownload{
+display:flex;
+align-items: center;
+justify-content:center
+}
+.snapDownloadResponsive{
+display:flex;
+align-items: center;
+justify-content:center	
+}
+.snapDownload_btn,.snapDownloadResponsive_btn{
+height:3rem	
+}
+.imagesContianer_image1_parent1{
+position:absolute;
+top:15%;
+left:10.5%;
+height:51.5%;
+width:16.7%;
+border-radius:0.6rem;
+overflow:hidden;
+background-color: transparent;
+z-index:3;
+box-shadow: 20px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.imagesContianer_image1{
+height:100%;
+width:100%;
+overflow:hidden;
+border-radius:0.6rem;
+background-image:url('/psP.jpg');
+background-size:cover;
+background-repeat:no-repeat;
+}
+/*
+.imagesContianer_image1:hover{
+-webkit-transform-origin: 50%  51%;
+transform: translateZ(0);
+transform: rotateY(-7deg);
+will-change: transform;
+transition: transform 0.6s;
+-webkit-perspective: 1000;
+filter:blur(0);
+ webkit-font-smoothing: antialiased;
+}
+*/
+
+.imagesContianer_image1:hover .change_image_arragngements {
+transition: transform 0.5s;
+display:block
+}
+.imagesContianer_image2_parent2{
+position:absolute;
+top:37%;
+left:22%;
+height:51%;
+width:17%;
+border-radius:0.6rem;
+background-color: transparent;
+box-shadow: 20px 10px 15px -3px rgba(0,0,0,0.1);
+z-index:2;
+overflow:hidden;
+}
+.imagesContianer_image2{
+height:100%;
+width:100%;
+overflow:hidden;
+border-radius:0.6rem;
+background-image:url('/andriod.jfif');
+background-size:cover;
+background-repeat:no-repeat;
+overflow:hidden;
+}
+
+.imagesContianer_image2:hover .change_image_arragngements {
+transition: transform 0.5s;
+display:block
+}
+.imagesContianer_image3_parent3{
+position:absolute;
+top:16%;
+left:36.5%;
+height:51%;
+width:17%;
+border-radius:0.6rem;
+background-color: transparent;
+z-index:1;
+box-shadow: 20px 10px 15px -3px rgba(0,0,0,0.1);
+overflow:hidden;
+}
+.imagesContianer_image3{
+height:100%;
+width:100%;
+overflow:hidden;
+border-radius:0.6rem;
+background-image:url('/images.jfif');
+background-size:cover;
+background-repeat:no-repeat;
+overflow:hidden;
+}
+
+.imagesContianer_image3:hover .change_image_arragngements {
+transition: transform 0.5s;
+display:block
+}
+.imagesContianer_image4_parent4{
+position:absolute;
+top:24.89%;
+left:49%;
+height:56%;
+width:18.8%;
+border-radius:0.6rem;
+background-color: transparent;
+z-index:3;
+box-shadow: 20px 10px 15px -3px rgba(0,0,0,0.1);
+overflow:hidden;
+}
+.imagesContianer_image4{
+height:100%;
+width:100%;
+overflow:hidden;
+border-radius:0.6rem;
+background-image:url('/psP.jpg');
+background-size:cover;
+background-repeat:no-repeat;
+overflow:hidden;
+}
+
+.imagesContianer_image4:hover .change_image_arragngements {
+transition: transform 0.5s;
+display:block
+}
+.imagesContianer_image5_parent5{
+position:absolute;
+top:36%;
+left:63.2%;
+height:53.7%;
+width:18.4%;
+border-radius:0.6rem;
+background-color: transparent;
+z-index:2;
+box-shadow: 20px 10px 15px -3px rgba(0,0,0,0.1);
+overflow:hidden;
+}
+.imagesContianer_image5{
+height:100%;
+width:100%;
+overflow:hidden;
+border-radius:0.6rem;
+background-image:url('/psP.jpg');
+background-size:cover;
+background-repeat:no-repeat;
+overflow:hidden;
+}
+
+.imagesContianer_image5:hover .change_image_arragngements {
+transition: transform 0.5s;
+display:block
+}
+.imagesContianer_image6_parent6{
+position:absolute;
+top:10.6%;
+left:71.7%;
+height:52.5%;
+width:18.4%;
+border-radius:0.6rem;
+background-color: transparent;
+z-index:1;
+box-shadow: 20px 10px 15px -3px rgba(0,0,0,0.1);
+overflow:hidden;
+}
+.imagesContianer_image6{
+height:100%;
+width:100%;
+overflow:hidden;
+border-radius:0.6rem;
+background-image:url('/andriod.jfif');
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+.imagesContianer_image6:hover .change_image_arragngements {
+transition: transform 0.5s;
+display:block
+}
+.change_image_arragngements{
+position:absolute;
+width:100%;
+height:50%;
+text-align:center;
+border-radius: 0 0 0.6rem 0.6rem;
+font-weight:bold;
+font-size:1.5vw;
+background-color:white;
+transition: transform 0.5s;
+display:none;
+}
+.change_image_arragngements_number{
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:1.7vw;
+width:33.3%;
+height:30%;
+margin:auto;
+border:1px solid green;
+border-style:dashed;
+border-radius:2rem;
+cursor:pointer
+}
+.tools{
+flex-direction: column;
+justify-content:center;
+align-items:center;
+
+}
+.tools :nth-Child(1){
+
+}
+.tools :nth-Child(2){
+margin-top:2vw;
+
+}
+.tools_input{
+height:14vw;
+width:9.5rem;
+}
+.snapDownload_btn,.snapDownloadResponsive_btn{
+height:3rem;
+width:65%;
+border:0;
+color:rgb(248, 213, 250);
+font-size:7vw;
+border-radius:2rem;
+background-image: linear-gradient(to right, #61a7b5, #5ca5c6, #69a1d4, #879adb, #ab8fd6);
+box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.1);
+border-style:dashed;
+transition:0.5s
+}
+.formContainer{
+margin-top:5vw;
+
+}
+.tools_input ::input[type="file"]{
+color:#fff;
+}
+.shuffleContainer{
+margin-top:2vw
+}
+}
+
+
+
+@media screen and (max-width: 300px) {  
+.snapDownload_btn,.snapDownloadResponsive_btn{
+height:3rem;
+width:80%;
+border:0;
+color:rgb(248, 213, 250);
+font-size:7vw;
+border-radius:2rem;
+background-image: linear-gradient(to right, #61a7b5, #5ca5c6, #69a1d4, #879adb, #ab8fd6);
+box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.1);
+border-style:dashed;
+transition:0.5s
+}
+}
