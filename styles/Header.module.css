@@ -21,7 +21,6 @@
     width:100%; 
     height: 100%;
     vertical-align: bottom;
-  
     }
     .nav_bar__compName{
     width:auto;
@@ -67,13 +66,14 @@
     justify-content: space-around;
     flex-direction: row;
     text-decoration: none;
-    gap: 25px;	
     font-size: 1vw;
     padding-bottom: 0.2vw;
 	
     }
     .nav_bar__menu_a {
     color: rgba(231, 231, 231);
+	padding-left:0.3rem;
+	padding-right:0.3rem;
     text-align: center;
     text-decoration: none;
     }
@@ -90,7 +90,7 @@
     
     @media screen and (max-width: 920px) {
       .nav_bar{
-          height: 8vh;
+          height: 8dvh;
 		  border: 1px solid red;
         }
       .nav_bar__logo{
@@ -140,12 +140,13 @@
         justify-content: space-around;
         flex-direction: row;
         text-decoration: none;
-        gap: 15px;	
         font-size: 2vw;
         }
        .nav_bar__menu_a {
         color: rgba(231, 231, 231);
         text-align: center;
+		padding-left:0.5rem;
+		padding-right:0.5rem;
         text-decoration: none;
         }
         .nav_bar__menu_a:hover {

@@ -56,7 +56,7 @@ export default function Footer() {
        // return ()=> window.removeEventListener('scroll',toggleVisible)
       },[])
 	  
-	  useLayoutEffect(()=>{
+	  useEffect(()=>{
      footerSection.current.style.display = 'block'
      },[])
   
