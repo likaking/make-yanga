@@ -14,9 +14,6 @@ import DisplayImages from '../src/display/imagesDisplay.js';
 const  Footer = React.lazy(()=> import('../src/footer/footer.js'))
 
 
-
-
-
 export default function Home() {
 
  return(
@@ -24,21 +21,17 @@ export default function Home() {
   <Head>
   <title>Make Yanga</title>
   <meta name="description" content="Generate Phone screen ADs for your products for free" />
-  <link rel="icon" href="/favicon.png" />
-  </Head>
-      
+  <link rel="icon" href="/favicon.PNG" />
+   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  </Head>   
   <Header />
-
   <main>
   <DisplayImages />
-  
   </main>
   <Suspense>
   <Footer />
   </Suspense>
-  
-
-   </>
+  </>
  )  
  }
 

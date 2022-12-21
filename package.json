@@ -401,5 +401,6 @@
   "bugs": {
     "url": "https://github.com/likaking/make-yanga/issues"
   },
-  "homepage": "https://github.com/likaking/make-yanga#readme"
+  "homepage": "https://github.com/likaking/make-yanga#readme",
+  "devDependencies": {}
 }
