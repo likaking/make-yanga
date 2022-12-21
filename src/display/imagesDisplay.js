@@ -145,8 +145,12 @@ return (
 <button className={styles.snapDownload_btn} onClick = {()=> renderImage()}  > <RiScreenshot2Fill style={{verticalAlign:'middle', fontSize:'2.5rem'}} /> <MdOutlineDownloading style={{verticalAlign:'middle', fontSize:'2.5rem'}} /><span style={{verticalAlign:'middle'}} > Download </span></button>
 </div>
 <div className={styles.tools}>
-<form ><div className={styles.formContainer}><input  className={styles.tools_input} type = 'file' multiple ref={input}  accept='image/*' onChange={(e)=>{assignImages(e.target.files)} } /></div></form>
-<div className={styles.shuffleContainer}><button   className={styles.shuffBtn}  onClick = {shufflePixArray}>Shuff Images</button></div></div>
+<form >
+<div className={styles.formContainer}>
+<input  className={styles.tools_input} type = 'file' multiple ref={input}  accept='image/*' onChange={(e)=>{assignImages(e.target.files)} } /></div>
+</form>
+<div className={styles.shuffleContainer}>
+<button   className={styles.shuffBtn}  onClick = {shufflePixArray}>Shuff Images</button></div></div>
 </div>  
 </div> 
 )
