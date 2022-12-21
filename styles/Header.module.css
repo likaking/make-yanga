@@ -91,7 +91,6 @@
     @media screen and (max-width: 920px) {
       .nav_bar{
         height: 5em;
-		border: 1px solid red;
         }
       .nav_bar__logo{
         width: 8%;
