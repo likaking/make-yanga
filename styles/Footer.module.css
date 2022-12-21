@@ -425,6 +425,7 @@ transition: 0.4s;
         .footer_links_contianer{
             flex: 1;
 			display:flex;
+			gap: 5vw;
 			
         }
         .footer_links_contianer >ul{
@@ -432,7 +433,7 @@ transition: 0.4s;
             list-style: none;
             display: flex;
             font-size: 3.2vw;
-            gap: 5em;
+            gap: 5vw;
             margin: 0;
             padding: 1rem;
             cursor: pointer;
@@ -443,6 +444,7 @@ transition: 0.4s;
             color: rgb(216, 216, 216); 
             font-size: 1em;
             align-items: right;
+            gap: 500px;
             cursor: pointer;
             flex: 1;
         }
