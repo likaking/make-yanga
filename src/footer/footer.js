@@ -7,10 +7,6 @@ import styles from '/styles/Footer.module.css'
 import {FaFacebook, FaTwitter, FaTiktok, FaYoutube, FaCopyright, FaArrowUp} from 'react-icons/fa'
 
 
-
-
-
-
 export default function Footer() {
 	
     const footerSection = useRef(null)
@@ -83,18 +79,18 @@ export default function Footer() {
        <div className={styles.footer_links}>
         <div className={styles.footer_links_contianer}>
           <ul>
-            <Link href = '' scroll = {false}><li> About </li></Link>
-            <Link href = '' scroll = {false}><li>Menu </li></Link>
-            <Link href = '' scroll = {false}><li>Gallery </li></Link>
-            <Link href = '' scroll = {false}><li>Contact </li></Link>
+            <Link href = '' scroll = {false}><li className={styles.li}> About </li></Link>
+            <Link href = '' scroll = {false}><li className={styles.li}>Menu </li></Link>
+            <Link href = '' scroll = {false}><li className={styles.li}>Gallery </li></Link>
+            <Link href = '' scroll = {false}><li className={styles.li}>Contact </li></Link>
           </ul>
         </div>
         <div className={styles.footer_Social}>
         <ul className={styles.footer_ul}>
-           <li> <FaFacebook /> </li>
-           <li> <FaTwitter /> </li>
-           <li> <FaTiktok /> </li>
-           <li> <FaYoutube /> </li>  
+           <li className={styles.li}> <FaFacebook /> </li>
+           <li className={styles.li}> <FaTwitter /> </li>
+           <li className={styles.li}> <FaTiktok /> </li>
+           <li className={styles.li}> <FaYoutube /> </li>  
            </ul>
         </div>
        <button className={styles.upButton} onClick = {scrollToTop} style={{display: visible ? 'inline' : 'none'}}><FaArrowUp /></button>
