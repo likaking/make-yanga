@@ -28,7 +28,7 @@
     font-size: 1.5vw;
     font-weight:500;
     margin-left:0.7rem;
-    color:rgb(241, 250, 249);
+    color:rgb(248, 245, 249);
     padding-bottom: 0.3%;
     text-shadow: 1px 1px rgba(133, 144, 148, 0.205);
     }
@@ -102,7 +102,7 @@
         font-size: 3vw;
         font-weight:500;
         margin-left:0.7rem;
-        color:rgb(248, 245, 245);
+        color:rgb(248, 245, 249);
         padding-bottom: 0.3%;
         }
         .nav_bar__mobile_btn{
@@ -215,7 +215,7 @@
         font-size: 6vw;
         font-weight:500;
         margin-left:0.7rem;
-        color:rgb(248, 245, 245);
+        color:rgb(248, 245, 249);
         padding-bottom: 1%;
         }
         .nav_bar__mobile_btn{
@@ -383,7 +383,7 @@
         font-size: 6vw;
         font-weight:500;
         margin-left:0.7rem;
-        color:rgb(248, 245, 245);
+        color:rgb(248, 245, 249);
         }
     
         .nav_bar__login{

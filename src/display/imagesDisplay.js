@@ -102,9 +102,11 @@ domtoimage
   });
 }
 
-useLayoutEffect(()=>{
-ref.current.style.display = 'block'
-
+useEffect(()=>{
+const showDisplayImages = setTimeout(()=>{
+ref.current.style.display = 'block'	
+},500)
+return ()=> clearTimeout(showDisplayImages)
 },[])
 
 useEffect(()=>{
