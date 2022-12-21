@@ -1,6 +1,7 @@
 import React, {Suspense,useState,useEffect,useRef,useCallback,useMemo,useLayoutEffect} from 'react';
 export let pixArr = ['/yangaAd1.png','/yangaAd5.png','/yangaAd3.png','/yangaAd2.png','/yangaAd4.png','/yangaAd6.png']
 
+//0px 0px 30px 0px rgba(0,0,0,0.1)
 
 export const myStylesParent = [
 {
@@ -12,7 +13,7 @@ width:'16.7%',
 borderRadius: typeof window !== 'undefined' && window.innerWidth <= 790 ? '2vw' : '1.6vw',
 backgroundColor: 'transparent',
 zIndex:3,
-boxShadow: '0px 0px 30px 0px rgba(0,0,0,0.1)',
+boxShadow: '0px 0px 69px 0px rgba(0,0,0,0.2)',
 overflow:'hidden',
 perspective: '1000px',
 transition: 'transform 0.5s'
@@ -26,7 +27,7 @@ width:'17%',
 borderRadius: typeof window !== 'undefined' && window.innerWidth <= 790 ? '2vw' : '1.6vw',
 backgroundColor: 'transparent',
 zIndex:2,
-boxShadow: '0px 0px 30px 0px rgba(0,0,0,0.1)',
+boxShadow: '0px 0px 69px 0px rgba(0,0,0,0.2)',
 overflow:'hidden',
 perspective: '1000px',
 transition: 'transform 0.5s'
@@ -40,7 +41,7 @@ width:'17%',
 borderRadius: typeof window !== 'undefined' && window.innerWidth <= 790 ? '2vw' : '1.6vw',
 backgroundColor: 'transparent',
 zIndex:1,
-boxShadow: '0px 0px 30px 0px rgba(0,0,0,0.1)',
+boxShadow: '0px 0px 69px 0px rgba(0,0,0,0.2)',
 overflow:'hidden',
 perspective: '1000px',
 transition: 'transform 0.5s'
@@ -54,7 +55,7 @@ width:'18.8%',
 borderRadius: typeof window !== 'undefined' && window.innerWidth <= 790 ? '2vw' : '1.6vw',
 backgroundColor: 'transparent',
 zIndex:3,
-boxShadow: '0px 0px 30px 0px rgba(0,0,0,0.1)',
+boxShadow: '0px 0px 69px 0px rgba(0,0,0,0.2)',
 overflow:'hidden',
 perspective: '1000px',
 transition: 'transform 0.5s'
@@ -68,7 +69,7 @@ width:'18.4%',
 borderRadius: typeof window !== 'undefined' && window.innerWidth <= 790 ? '2vw' : '1.6vw',
 backgroundColor: 'transparent',
 zIndex:2,
-boxShadow: '0px 0px 30px 0px rgba(0,0,0,0.1)',
+boxShadow: '0px 0px 69px 0px rgba(0,0,0,0.2)',
 overflow:'hidden',
 perspective: '1000px',
 transition: 'transform 0.5s'
@@ -82,7 +83,7 @@ width:'18.4%',
 borderRadius: typeof window !== 'undefined' && window.innerWidth <= 790 ? '2vw' : '1.6vw',
 backgroundColor: 'transparent',
 zIndex:1,
-boxShadow: '0px 0px 30px 0px rgba(0,0,0,0.1)',
+boxShadow: '0px 0px 69px 0px rgba(0,0,0,0.2)',
 overflow:'hidden',
 perspective: '1000px',
 transition: 'transform 0.5s'
