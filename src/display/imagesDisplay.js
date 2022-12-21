@@ -146,11 +146,13 @@ return (
 </div>
 <div className={styles.tools}>
 <form >
-<div className={styles.formContainer}>
-<input  className={styles.tools_input} type = 'file' multiple ref={input}  accept='image/*' onChange={(e)=>{assignImages(e.target.files)} } /></div>
+
+<input  className={styles.tools_input} type = 'file' multiple ref={input}  accept='image/*' onChange={(e)=>{assignImages(e.target.files)} } />
+{' '}{' '}
+<button   className={styles.shuffBtn}  onClick = {shufflePixArray} type= 'button'>Shuff Images</button>
+
 </form>
-<div className={styles.shuffleContainer}>
-<button   className={styles.shuffBtn}  onClick = {shufflePixArray}>Shuff Images</button></div></div>
+<div className={styles.shuffleContainer}></div></div>
 </div>  
 </div> 
 )

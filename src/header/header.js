@@ -37,9 +37,9 @@ Make Yanga
 
 
 <div className={styles.nav_bar__mobileBtn} onClick={toggleMenu}><FaBars /></div>
-<div className={styles.nav_Mobilemenu} style={{display : toggle ? 'block' : 'none'}}>
-  <ul>
-  <li><a href = "#" className={styles.nav_bar__menu_aMobile}>More tools</a></li>
+<div className={toggle ? styles.nav_Mobilemenu_show : styles.nav_Mobilemenu} >
+<ul>
+<li><a href = "#" className={styles.nav_bar__menu_aMobile}>More tools</a></li>
 <li><a href = "#" className={styles.nav_bar__menu_aMobile}>Creator</a></li>
 <li><a href = "#" className={styles.nav_bar__menu_aMobile}>Market</a></li>
 <li><a href = "#" className={styles.nav_bar__menu_aMobile}>Community</a></li>
