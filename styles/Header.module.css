@@ -199,8 +199,8 @@
         padding-left: 1.5vw;
         }
         .nav_bar__logo{
-        width: 20%;
-        height:60%;
+        width: 30%;
+        height:70%;
         position: relative;
         }
         .nav_bar__logo_icon{
@@ -367,8 +367,8 @@
         justify-content: flex-start;
         }
         .nav_bar__logo{
-        width: auto;
-        height:60%;
+        width: 30;
+        height:70%;
         position: relative;
         }
         .nav_bar__logo_icon{
