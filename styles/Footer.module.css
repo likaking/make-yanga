@@ -191,7 +191,6 @@ transition: 0.4s;
     height: 10vh;
     display: flex;
     flex-direction: column;
-  
 }
 .footer_logo3{
     flex: 3;
@@ -205,7 +204,6 @@ transition: 0.4s;
     text-align: center;
     font-weight: 500;
     font-size: 2vw;
-
 }
 .footer_hr{
     width: 80%;
@@ -432,12 +430,11 @@ transition: 0.4s;
             list-style: none;
             display: flex;
             font-size: 3.2vw;
-            gap: 1.8vw;
+            gap: 3vw;
             margin: 0;
             padding: 0;
             cursor: pointer;
         }
-        
         
         .footer_Social{
             color: rgb(216, 216, 216); 
@@ -452,7 +449,7 @@ transition: 0.4s;
            display: flex; 
            margin: 0;
            padding: 0;
-           gap: 1.5vw;
+           gap: 3vw;
            margin-left: 0;
            
         }
@@ -496,29 +493,7 @@ transition: 0.4s;
          }
     }
 
-    @media screen and (max-width: 420px) {  
-        .footer_logo2{
-            width: 60%;
-            height: 17vh;
-            display: flex;
-            flex-direction: column;
-         
-        }
-        .footer_logo3{
-            flex: 3;
-            align-items: left;
-        }
-        .footer_logoImg{
-            width: 40%;
-            height: auto;
-        }
-        .footer_CompName{
-            text-align: center;
-            font-weight: 500;
-            font-size: 4vw;
-        }
-       
-    }
+
    
 
 
