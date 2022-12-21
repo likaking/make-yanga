@@ -99,7 +99,8 @@ backgroundSize:'cover',
 backgroundRepeat:'no-repeat',
 transformStyle: 'preserve-3d',
 transform: 'rotateY(-2deg)',
-transition: 'transform 0.5s'
+transition: 'transform 0.5s',
+boxShadow: '0px 0px 18px 13px rgba(0,0,0,0.1)',
 },
 {
 height:'100%',
@@ -111,7 +112,8 @@ backgroundRepeat:'no-repeat',
 transformStyle: 'preserve-3d',
 transformOrigin:' 20% 40%',
 transform: 'rotateY(-7deg)',
-transition: 'transform 0.5s'
+transition: 'transform 0.5s',
+boxShadow: '0px 0px 18px 13px rgba(0,0,0,0.1)',
 },
 {
 height:'100%',
@@ -123,7 +125,8 @@ backgroundRepeat:'no-repeat',
 transformStyle: 'preserve-3d',
 transformOrigin:' 20% 40%',
 transform: 'rotateY(-7deg)',
-transition: 'transform 0.5s'
+transition: 'transform 0.5s',
+boxShadow: '0px 0px 18px 13px rgba(0,0,0,0.1)',
 },
 {
 height:'100%',
@@ -135,7 +138,8 @@ backgroundRepeat:'no-repeat',
 transformStyle: 'preserve-3d',
 transformOrigin:' 20% 40%',
 transform: 'rotateY(-7deg)',
-transition: 'transform 0.5s'
+transition: 'transform 0.5s',
+boxShadow: '0px 0px 18px 13px rgba(0,0,0,0.1)',
 },
 {
 height:'100%',
@@ -147,7 +151,8 @@ backgroundRepeat:'no-repeat',
 transformStyle: 'preserve-3d',
 transformOrigin:' 20% 40%',
 transform: 'rotateY(-7deg)',
-transition: 'transform 0.5s'
+transition: 'transform 0.5s',
+boxShadow: '0px 0px 18px 13px rgba(0,0,0,0.1)',
 },
 {
 height:'100%',
@@ -159,6 +164,7 @@ backgroundRepeat:'no-repeat',
 transformStyle: 'preserve-3d',
 transformOrigin:' 20% 40%',
 transform: 'rotateY(-7deg)',
-transition: 'transform 0.5s'
+transition: 'transform 0.5s',
+boxShadow: '0px 0px 18px 13px rgba(0,0,0,0.1)',
 }
 ]

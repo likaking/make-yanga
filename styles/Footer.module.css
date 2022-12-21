@@ -430,7 +430,7 @@ transition: 0.4s;
             list-style: none;
             display: flex;
             font-size: 3.2vw;
-            gap: 3vw;
+            gap: 5vw;
             margin: 0;
             padding: 0;
             cursor: pointer;
@@ -440,7 +440,7 @@ transition: 0.4s;
             color: rgb(216, 216, 216); 
             font-size: 1em;
             align-items: right;
-            gap: 1.5vw;
+            gap: 5vw;
             cursor: pointer;
             flex: 1;
         }
@@ -449,7 +449,7 @@ transition: 0.4s;
            display: flex; 
            margin: 0;
            padding: 0;
-           gap: 3vw;
+           gap: 5vw;
            margin-left: 0;
            
         }
@@ -491,7 +491,7 @@ transition: 0.4s;
          font-size: 5vw;
          cursor: pointer;
          }
-    }
+         }
 
 
    

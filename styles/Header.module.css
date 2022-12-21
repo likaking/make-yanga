@@ -70,9 +70,10 @@
     gap: 25px;	
     font-size: 1vw;
     padding-bottom: 0.2vw;
+	
     }
     .nav_bar__menu_a {
-    color: rgba(231, 231, 231, 0.836);
+    color: rgba(231, 231, 231);
     text-align: center;
     text-decoration: none;
     }
@@ -141,8 +142,8 @@
         gap: 15px;	
         font-size: 2vw;
         }
-        .nav_bar__menu_a {
-        color: rgb(197, 196, 197);
+       .nav_bar__menu_a {
+        color: rgba(231, 231, 231);
         text-align: center;
         text-decoration: none;
         }
@@ -152,7 +153,8 @@
         .nav_Mobilemenu{
           display: none;
         }
-    }
+		
+        }
     
     
     @media screen and (max-width: 830px) {
