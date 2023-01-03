@@ -7,7 +7,7 @@ height:55vw;
 display:flex;
 flex-direction:column;
 margin:auto;
-width:65%;
+width:75%;
 height:54.7vw;
 background-repeat:no-repeat;
 background-size:contain;
@@ -304,7 +304,7 @@ transition:0.5s
 
 @media screen and (max-width: 930px) {    
 .imagesContianer{
-width:93.7%;
+width:73.7%;
 height:69vw;
 }
 .snapDownload_btn,.snapDownloadResponsive_btn{
