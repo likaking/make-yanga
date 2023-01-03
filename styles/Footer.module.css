@@ -3,9 +3,10 @@
 .footer{
     width: 100%;
     padding-top: 5vw;
-    margin-top: 40vw;
+    margin-top: 20vw;
     background-color: transparent;
     position: relative;    
+	
 }
 .footer_logo{
     display: flex;
@@ -136,22 +137,18 @@ padding-bottom: 0rem;
 }
 .footer_Social >ul>li{
    font-size: 2vw;
-   transition: 0.4s;
-  
-  
+   transition: 0.4s; 
  }
  .footer_Social >ul>li :hover{
 color: rgb(209, 140, 254 );
 transition: 0.4s;    
 }
  .copyRight{
-    color: rgb(216, 216, 216); 
-    font-size: 0.6em;
-    width: 50%;
-    margin: auto;
-    padding-bottom: 1rem;
-    
- 
+ color: rgb(216, 216, 216); 
+ font-size: 0.6em;
+ width: 50%;
+ margin: auto;
+ padding-bottom: 1rem;
  }
  .upButton{
  position: fixed;
@@ -175,6 +172,7 @@ transition: 0.4s;
 .footer{
     width: 100%;
     padding-top: 5vw;
+	margin-top:30rem;
 }
 .footer_logo{
     display: flex;
@@ -337,6 +335,7 @@ transition: 0.4s;
     .footer{
         width: 100%;
         padding-top: 10vw;
+		margin-top:25rem;
     }
     .footer_logo{
         display: flex;

@@ -23,12 +23,11 @@ const reAsignImages = useRef([])
 const imagesContianer = useRef([])
 const input = useRef(null)
 const ref = useRef(null) 
+const parentContainer = useRef([]) 
 const downloadPlusTools = useRef(null)
 
+
 pixArr.length = 6
-
-
-
 
 const reOrderImages = (index)=>{
 var swapWithCurrentIndexPix = yImages[reorderImagesCounter]
@@ -64,6 +63,12 @@ imagesContianer.current[2].style.backgroundImage = `url(${yImages[2]})`
 imagesContianer.current[3].style.backgroundImage = `url(${yImages[3]})`
 imagesContianer.current[4].style.backgroundImage = `url(${yImages[4]})`
 imagesContianer.current[5].style.backgroundImage = `url(${yImages[5]})`
+yImages[0] === undefined ? parentContainer.current[0].style.display = 'none' : parentContainer.current[0].style.display = 'block'
+yImages[1] === undefined ? parentContainer.current[1].style.display = 'none' : parentContainer.current[1].style.display = 'block'
+yImages[2] === undefined ? parentContainer.current[2].style.display = 'none' : parentContainer.current[2].style.display = 'block'
+yImages[3] === undefined ? parentContainer.current[3].style.display = 'none' : parentContainer.current[3].style.display = 'block'
+yImages[4] === undefined ? parentContainer.current[4].style.display = 'none' : parentContainer.current[4].style.display = 'block'
+yImages[5] === undefined ? parentContainer.current[5].style.display = 'none' : parentContainer.current[5].style.display = 'block'
 },[reorderImagesCounter,yImages])
 
 
@@ -76,14 +81,16 @@ currentIndex--;
 [shuf[currentIndex], shuf[randomIndex]] = [shuf[randomIndex], shuf[currentIndex]];
 }
 return setYimages(shuf)	
+
 }
+
+
   
 const  assignImages = (obj)=>{
 var tempArray = []
 var imagesArray = [...obj]
 imagesArray.map((file)=>{
 var imageUrl = URL.createObjectURL(file)
-console.log(imageUrl)
 tempArray.push(imageUrl)
 }
 )
@@ -94,10 +101,10 @@ const renderImage = ()=>{
 domtoimage
   .toPng(ref.current, { quality: 1.0})
   .then(function (dataUrl) {
-    var link = document.createElement("a");
-    link.download = "my-Yanga.png";
-    link.href = dataUrl;
-    link.click();
+  var link = document.createElement("a");
+  link.download = "my-Yanga.png";
+  link.href = dataUrl;
+  link.click();
   });
    }
 
@@ -112,7 +119,9 @@ useEffect(()=>{
 downloadPlusTools.current.style.display = 'block'
 },[])
   
-  
+ const handleClick = event => {
+    input.current.click();
+  }; 
 
 
 return (  
@@ -124,7 +133,7 @@ myStylesParent.map((smartPhone,index)=>{
 	
 return (
 
-<div style= {myStylesParent[index]} onMouseEnter = {()=>{displayRAItabs(index)}} onMouseLeave = {()=>{hideRAItabs(index)}} key={index} >
+<div style= {myStylesParent[index]} onMouseEnter = {()=>{displayRAItabs(index)}} onMouseLeave = {()=>{hideRAItabs(index)}} key={index} ref = {(imgFrame)=>{parentContainer.current[index] = imgFrame}} >
 <div  className={styles.imageContainer}  style= {myStylesChild[index]} ref ={(continer)=>{imagesContianer.current[index] = continer }}>
 <div  className={styles.change_image_arragngements} ref = {(rAi)=> {reAsignImages.current[index] = rAi}}>
 <h5 onClick={resetCount}>Reorder Images</h5>
@@ -140,20 +149,22 @@ return (
 })
 }
 </div>
-
+<div className={styles.sideButtons}><button className={styles.snapDownload_btnBigSc} onClick = {()=> renderImage()}  > <RiScreenshot2Fill style={{verticalAlign:'middle', fontSize:'2.5rem'}} /> <MdOutlineDownloading style={{verticalAlign:'middle', fontSize:'2.5rem'}} /><span style={{verticalAlign:'middle'}} > D{<br />}o{<br />}w{<br />}n{<br />}l{<br />}o{<br />}a{<br />}d </span></button> 
+ <button onClick={handleClick} className={styles.customButtons} >
+ U {<br />} p {<br />} l {<br />} o {<br />} a {<br />}d
+ </button>
+ <button   className={styles.shuffBtnBigSc}  onMouseDown = {shufflePixArray} type= 'button'>S{<br />} h {<br />} u {<br />} f {<br />} f {<br />} l {<br />}e </button> 
+<input   style ={{display:'none'}}  className={styles.tools_inputBigSc} type = 'file' multiple ref={input}  accept='image/*' onChange={(e)=>{assignImages(e.target.files)} } />
+</div>
 
 <div ref = {downloadPlusTools}>
 <div className={styles.snapDownload}>
 <button className={styles.snapDownload_btn} onClick = {()=> renderImage()}  > <RiScreenshot2Fill style={{verticalAlign:'middle', fontSize:'2.5rem'}} /> <MdOutlineDownloading style={{verticalAlign:'middle', fontSize:'2.5rem'}} /><span style={{verticalAlign:'middle'}} > Download </span></button>
 </div>
 <div className={styles.tools}>
-<button  style={{float:'left'}} className={styles.snapDownload_btn} onClick = {()=> renderImage()}  > <RiScreenshot2Fill style={{verticalAlign:'middle', fontSize:'2.5rem'}} /> <MdOutlineDownloading style={{verticalAlign:'middle', fontSize:'2.5rem'}} /><span style={{verticalAlign:'middle'}} > Download </span></button>
 <form >
-
-<input  className={styles.tools_input} type = 'file' multiple ref={input}  accept='image/*' onChange={(e)=>{assignImages(e.target.files)} } />
-{' '}{' '}
-<button   className={styles.shuffBtn}  onClick = {shufflePixArray} type= 'button'>Shuff Images</button>
-
+<input    className={styles.tools_input} type = 'file' multiple ref={input}  accept='image/*' onChange={(e)=>{assignImages(e.target.files)} } />
+<button   className={styles.shuffBtn}  onMouseDown = {shufflePixArray} type= 'button'>Shuff Images</button>
 </form>
 <div className={styles.shuffleContainer}></div></div>
 </div>  
