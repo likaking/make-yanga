@@ -148,7 +148,7 @@ return (
 </div>
 <div className={styles.tools}>
 <form >
-
+<button  style={{float:'left'}} className={styles.snapDownload_btn} onClick = {()=> renderImage()}  > <RiScreenshot2Fill style={{verticalAlign:'middle', fontSize:'2.5rem'}} /> <MdOutlineDownloading style={{verticalAlign:'middle', fontSize:'2.5rem'}} /><span style={{verticalAlign:'middle'}} > Download </span></button>
 <input  className={styles.tools_input} type = 'file' multiple ref={input}  accept='image/*' onChange={(e)=>{assignImages(e.target.files)} } />
 {' '}{' '}
 <button   className={styles.shuffBtn}  onClick = {shufflePixArray} type= 'button'>Shuff Images</button>
