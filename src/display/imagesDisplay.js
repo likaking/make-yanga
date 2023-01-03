@@ -92,7 +92,7 @@ setYimages(tempArray)
 
 const renderImage = ()=>{
 domtoimage
-  .toPng(ref.current, { quality: 1.0 , width:'950px',height:'700px'})
+  .toPng(ref.current, { quality: 1.0})
   .then(function (dataUrl) {
     var link = document.createElement("a");
     link.download = "my-Yanga.png";
@@ -140,6 +140,8 @@ return (
 })
 }
 </div>
+
+
 <div ref = {downloadPlusTools}>
 <div className={styles.snapDownload}>
 <button className={styles.snapDownload_btn} onClick = {()=> renderImage()}  > <RiScreenshot2Fill style={{verticalAlign:'middle', fontSize:'2.5rem'}} /> <MdOutlineDownloading style={{verticalAlign:'middle', fontSize:'2.5rem'}} /><span style={{verticalAlign:'middle'}} > Download </span></button>
