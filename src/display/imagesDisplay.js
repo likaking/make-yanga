@@ -9,7 +9,6 @@ import {myStylesParent,myStylesChild,pixArr,backgroundType} from '/src/styles/st
 import * as htmlToImage from 'html-to-image';
 import domtoimage from 'dom-to-image';
 import { toPng, toJpeg, toBlob, toPixelData, toSvg } from 'html-to-image';
-import html2canvas from "html2canvas";
 import { MdOutlineDownloading } from "react-icons/md"
 import { RiScreenshot2Fill } from "react-icons/ri";
 
@@ -93,7 +92,7 @@ setYimages(tempArray)
 
 const renderImage = ()=>{
 domtoimage
-  .toPng(ref.current, { quality: 1.0 })
+  .toPng(ref.current, { quality: 1.0 , width:'950px',height:'700px'})
   .then(function (dataUrl) {
     var link = document.createElement("a");
     link.download = "my-Yanga.png";
