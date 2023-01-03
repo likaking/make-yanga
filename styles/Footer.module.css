@@ -316,17 +316,13 @@ transition: 0.4s;
      position: fixed;
      right: 2vw;
      border: 0;
-     color: rgb(243, 236, 236) ;
-     border: 2px solid rgb(14, 48, 65);
-     border-style: dashed;
-     color: rgb(14, 48, 65);
      padding: 1.5% 1.7% 0.7% 1.5%;
      border-radius: 50%;
      font-size: 1.5em;
      cursor: pointer;
      }
 	 .li{
-			 margin:0.7rem
+	 margin:0.7rem
 	}
 
     }
