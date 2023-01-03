@@ -117,6 +117,7 @@ downloadPlusTools.current.style.display = 'block'
 
 
 return (  
+<>
 <div className={styles.displayImages}>
 <div className={styles.imagesContianer}  ref = {ref}  >
 {
@@ -155,6 +156,7 @@ return (
 <div className={styles.shuffleContainer}></div></div>
 </div>  
 </div> 
+</>
 )
 }
 
