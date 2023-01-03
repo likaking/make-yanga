@@ -22,7 +22,7 @@ export default function Home() {
   <title>Make Yanga</title>
   <meta name="description" content="Generate Phone screen ADs for your products for free" />
   <link rel="icon" href="favicon.PNG" />
-   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
   </Head>   
   <Header />
   <main>

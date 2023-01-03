@@ -100,7 +100,7 @@ domtoimage
     link.href = dataUrl;
     link.click();
   });
-}
+   }
 
 useEffect(()=>{
 const showDisplayImages = setTimeout(()=>{
@@ -118,7 +118,7 @@ downloadPlusTools.current.style.display = 'block'
 
 return (  
 <div className={styles.displayImages}>
-<div className={styles.imagesContianer}  ref = {ref} style ={{display:'none'}} >
+<div className={styles.imagesContianer}  ref = {ref}  >
 {
 myStylesParent.map((smartPhone,index)=>{
 	
@@ -139,8 +139,6 @@ return (
 )
 })
 }
-
-
 </div>
 <div ref = {downloadPlusTools}>
 <div className={styles.snapDownload}>
@@ -162,32 +160,3 @@ return (
 
 
 
-/*
-setYimages([URL.createObjectURL(e.target.files[0]),URL.createObjectURL(e.target.files[1]),URL.createObjectURL(e.target.files[2]),URL.createObjectURL(e.target.files[3]),URL.createObjectURL(e.target.files[4]),URL.createObjectURL(e.target.files[5])])
-
-<div className={styles.snapDownloadResponsive}><button className={styles.snapDownloadResponsive_btn}>Snap</button></div>
-return (  
-<div className={styles.displayImages}>
-<div className={styles.toolsLeft}></div>
-<div className={styles.imagesContianer}>
-<div className={styles.imagesContianer_Images}></div>
-</div>
-<div className={styles.toolsRight}></div>
-
-</div>   
-)
-
-
-
-function fisherYates( array ){
- var count = array.length,
-     randomnumber,
-     temp;
- while( count ){
-  randomnumber = Math.random() * count-- | 0;
-  temp = array[count];
-  array[count] = array[randomnumber];
-  array[randomnumber] = temp
- }
-}
-*/

@@ -1,6 +1,7 @@
 .displayImages{
 width:100%;
 height:55vw;	
+
 }
 .imagesContianer{
 display:flex;
@@ -12,6 +13,8 @@ background-repeat:no-repeat;
 background-size:contain;
 position:relative;
 background-color:transparent;
+border:2px solid red;
+display:none
 }
 
 .imagesContianer_Images{
