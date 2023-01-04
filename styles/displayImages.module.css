@@ -366,7 +366,7 @@ cursor: pointer;
 color:rgb(248, 213, 250);
 background-image: linear-gradient(to left, #69a9b7, #63a7c7, #6da2d4, #899adb, #ab8fd6);
 box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.2);
-
+border: 2px solid rgb(248, 213, 250);
 transition:0.5s
 }
 .snapDownload_btnBigSc:hover{
