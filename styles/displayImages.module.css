@@ -332,6 +332,13 @@ box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.1);
 margin-bottom:0.2rem;
 cursor: pointer;
 }
+.shuffBtnBigSc:hover{
+color:rgb(248, 213, 250);
+background-image: linear-gradient(to left, #69a9b7, #63a7c7, #6da2d4, #899adb, #ab8fd6);
+box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.2);
+border: 2px solid rgb(248, 213, 250);
+transition:0.5s
+}
 .snapDownload_btnBigSc{
 height:45%;
 width:90%;
@@ -346,7 +353,12 @@ margin-bottom:0.2rem;
 transition:0.5s;
 cursor: pointer;
 }
-
+.snapDownload_btnBigSc:hover{
+color:rgb(248, 213, 250);
+background-image: linear-gradient(to left, #69a9b7, #63a7c7, #6da2d4, #899adb, #ab8fd6);
+box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.2);
+transition:0.5s
+}
 .customButtons{
 height:25%;
 width:90%;
@@ -369,19 +381,7 @@ box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.2);
 border: 2px solid rgb(248, 213, 250);
 transition:0.5s
 }
-.snapDownload_btnBigSc:hover{
-color:rgb(248, 213, 250);
-background-image: linear-gradient(to left, #69a9b7, #63a7c7, #6da2d4, #899adb, #ab8fd6);
-box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.2);
-transition:0.5s
-}
-.shuffBtnBigSc:hover{
-color:rgb(248, 213, 250);
-background-image: linear-gradient(to left, #69a9b7, #63a7c7, #6da2d4, #899adb, #ab8fd6);
-box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.2);
-border: 0px solid white;
-transition:0.5s
-}
+
 .tools_input[type='file']{
 color:rgba(0,0,0,0)
 }
