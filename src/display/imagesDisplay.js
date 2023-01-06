@@ -154,7 +154,7 @@ return (
  U {<br />} p {<br />} l {<br />} o {<br />} a {<br />}d
  </button>
  <button   className={styles.shuffBtnBigSc}  onMouseDown = {shufflePixArray} type= 'button'>S{<br />} h {<br />} u {<br />} f {<br />} f {<br />} l {<br />}e </button> 
-<input   style ={{display:'none'}}  className={styles.tools_inputBigSc} type = 'file' multiple ref={input}  accept='image/*' onChange={(e)=>{assignImages(e.target.files)} } />
+ <input   style ={{display:'none'}}  className={styles.tools_inputBigSc} type = 'file' multiple ref={input}  accept='image/*' onChange={(e)=>{assignImages(e.target.files)} } />
 </div>
 
 <div ref = {downloadPlusTools}>
