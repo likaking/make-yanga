@@ -15,6 +15,7 @@ import { RiScreenshot2Fill } from "react-icons/ri";
 
 
 
+
 export default function DisplayImages() {
 const [reorderImagesCounter,setReorderImagesCounter]= useState(0)
 const [yImages,setYimages]= useState(pixArr)
@@ -97,16 +98,27 @@ tempArray.push(imageUrl)
 setYimages(tempArray)
 }
 
-const renderImage = ()=>{
-domtoimage
-  .toPng(ref.current, { quality: 1.0})
-  .then(function (dataUrl) {
-  var link = document.createElement("a");
-  link.download = "my-Yanga.png";
-  link.href = dataUrl;
-  link.click();
-  });
-   }
+
+
+const renderImage = useCallback(() => {
+if (ref.current === null) {
+return
+}
+
+toPng(ref.current, { cacheBust: true })
+.then((dataUrl) => {
+const link = document.createElement('a')
+link.download = 'my-yanga-image.png'
+link.href = dataUrl
+link.click()
+})
+.catch((err) => {
+console.log(err)
+})
+}, [ref])
+   
+   
+   
 
 useEffect(()=>{
 const showDisplayImages = setTimeout(()=>{

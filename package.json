@@ -156,7 +156,7 @@
     "has-symbols": "^1.0.3",
     "has-tostringtag": "^1.0.0",
     "hoist-non-react-statics": "^3.3.2",
-    "html-to-image": "^1.11.3",
+    "html-to-image": "^1.11.4",
     "html2canvas": "^1.4.1",
     "http-parser-js": "^0.5.8",
     "idb": "^7.0.1",
@@ -401,6 +401,5 @@
   "bugs": {
     "url": "https://github.com/likaking/make-yanga/issues"
   },
-  "homepage": "https://github.com/likaking/make-yanga#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/likaking/make-yanga#readme"
 }
